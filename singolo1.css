@@ -1,12 +1,12 @@
 @import "assets/fonts/fonts.css";
 
 .wrapper {
-  background: green;
   width: 1020px;
   font-family: "Lato";
 }
 
 .header {
+  width: inherit;
   background: #2d303a;
   font-weight: 700;
   text-align: left;
@@ -19,8 +19,10 @@
 }
 
 .header-bottom {
+  width: inherit;
   height: 6px;
   background: #323746;
+  position: absolute;
 }
 
 .logo {
