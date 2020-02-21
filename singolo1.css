@@ -65,3 +65,34 @@
 .navbar a:hover {
   color: #f06c64;
 }
+
+.slider {
+  width: inherit;
+  height: 600px;
+  background-color: #f06c64;
+  display: flex;
+}
+
+.prev {
+  width: 60px;
+}
+
+.prev button {
+  background-color: inherit;
+  border: none;
+  background-image: url(assets/images/prev.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 27px;
+  position: relative;
+  top: 287px;
+  left: 42px;
+}
+
+.prev button:hover {
+  background-image: url(assets/images/prev-hover.png);
+}
+
+.prev button:focus {
+  outline: none;
+}
