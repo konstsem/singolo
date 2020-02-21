@@ -72,7 +72,8 @@
   background-color: #f06c64;
 }
 
-.prev {
+.prev,
+.next {
   width: 60px;
 }
 
@@ -88,11 +89,28 @@
   left: 42px;
 }
 
+.next button {
+  background-color: inherit;
+  border: none;
+  background-image: url(assets/images/next.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 27px;
+  position: relative;
+  top: 260px;
+  left: 964px;
+}
+
 .prev button:hover {
   background-image: url(assets/images/prev-hover.png);
 }
 
-.prev button:focus {
+.next button:hover {
+  background-image: url(assets/images/next-hover.png);
+}
+
+.prev button:focus,
+.next button:focus {
   outline: none;
 }
 
