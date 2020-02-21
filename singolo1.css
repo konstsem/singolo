@@ -70,7 +70,6 @@
   width: inherit;
   height: 600px;
   background-color: #f06c64;
-  display: flex;
 }
 
 .prev {
@@ -95,4 +94,16 @@
 
 .prev button:focus {
   outline: none;
+}
+
+.iphone-vertical {
+  position: absolute;
+  left: 110px;
+  top: 78px;
+}
+
+.iphone-horizontal {
+  position: absolute;
+  left: 360px;
+  top: 164px;
 }
