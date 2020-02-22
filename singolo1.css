@@ -125,3 +125,27 @@
   left: 360px;
   top: 164px;
 }
+
+.services {
+  margin-top: 6px;
+  background-color: #f2f2f2;
+}
+
+.services h3 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  text-align: left;
+  padding: 68px 0 0 40px;
+}
+
+.services__description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  text-align: justify;
+  padding: 28px 41px;
+  letter-spacing: -0.22px;
+}
