@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 700;
   src: local('Lato Bold'), local('Lato-Bold'),
-    url('Lato-Bold.woff2') format('woff2'),
-    url('Lato-Bold.woff') format('woff');
+    url('./assets/fonts/Lato-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Lato-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -13,8 +13,8 @@
   font-style: normal;
   font-weight: 900;
   src: local('Lato Black'), local('Lato-Black'),
-    url('Lato-Black.woff2') format('woff2'),
-    url('Lato-Black.woff') format('woff');
+    url('./assets/fonts/Lato-Black.woff2') format('woff2'),
+    url('./assets/fonts/Lato-Black.woff') format('woff');
 }
 
 @font-face {
@@ -22,6 +22,6 @@
   font-style: normal;
   font-weight: 300;
   src: local('Lato Light'), local('Lato-Light'),
-    url('Lato-Light.woff2') format('woff2'),
-    url('Lato-Light.woff') format('woff');
+    url('./assets/fonts/Lato-Light.woff2') format('woff2'),
+    url('./assets/fonts/Lato-Light.woff') format('woff');
 }
