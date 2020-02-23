@@ -34,3 +34,15 @@
     url('./assets/fonts/Lato-Light.woff') format('woff');
     url('./assets/fonts/Lato-Light.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('.assets/fonts/Lato-Regular.eot');
+  src: local('Lato Regular'), local('Lato-Regular'),
+    url('.assets/fonts/Lato-Regular.eot?#iefix') format('embeddedopentype'),
+    url('./assets/fonts/Lato-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Lato-Regular.woff') format('woff');
+    url('./assets/fonts/Lato-Regular.ttf') format('truetype');
+}

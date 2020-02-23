@@ -1,5 +1,4 @@
 @import "./fonts.css";
-
 .wrapper {
   width: 1020px;
   font-family: "Lato", sans-serif;
@@ -149,3 +148,72 @@
   padding: 28px 41px;
   letter-spacing: -0.22px;
 }
+
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18px 0 0 40px;
+}
+
+.service {
+  display: flex;
+  width: 320px;
+  margin: 0 0 31px 0;
+}
+
+.service__description {
+  padding-left: 10px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+
+.icon_custom-design {
+  background-image: url(assets/images/pen.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_inovative-ideas {
+  background-image: url(assets/images/bulb.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_love-is-the-answer {
+  background-image: url(assets/images/heart.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_responsive-layout {
+  background-image: url(assets/images/phone.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_24-7-support {
+  background-image: url(assets/images/bubble.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_feel-like-a-star {
+  background-image: url(assets/images/star.svg);
+  background-repeat: no-repeat;
+}
+
+.service__description h4 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+}
+
+.service__description p {
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  padding-top: 9px;
+}
+
+/*# sourceMappingURL=singolo1.css.map */
