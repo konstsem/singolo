@@ -14,12 +14,12 @@
         <div class="header-main">
           <div class="logo">
             <h1>
-              <span class="logo-white-part">Singolo</span><span class="logo-red-part">*</span>
+              Singolo<span class="logo-additional">*</span>
             </h1>
           </div>
-          <nav class="navbar">
-            <ul>
-              <li class><a href="#">Home</a></li>
+          <nav class="header__navigation">
+            <ul class="navigation">
+              <li class="selected"><a href="#">Home</a></li>
               <li>&#183</li>
               <li><a href="#">Services</a></li>
               <li>&#183</li>
@@ -34,19 +34,22 @@
         <div class="header-bottom"></div>
       </header>
       <section class="slider">
-        <div class="prev">
-          <button>
-          </button>
+        <div class="slider__main">
+          <div class="prev">
+            <button>
+            </button>
+          </div>
+          <div class="next">
+            <button>
+            </button>
+          </div>
+          <img class="iphone-vertical" src="assets/images/iphone-vertical.png" alt="iphone-vertical">
+          <img class="iphone-horizontal" src="assets/images/iphone-horizontal.png" alt="iphone-horizontal">
         </div>
-        <div class="next">
-          <button>
-          </button>
-        </div>
-        <img class="iphone-vertical" src="assets/images/iphone-vertical.png" alt="iphone-vertical">
-        <img class="iphone-horizontal" src="assets/images/iphone-horizontal.png" alt="iphone-horizontal">
+        <div class="slider-bottom"></div>
       </section>
       <section class="services">
-        <div class="wrapper">
+        <div class="services__wrapper">
           <h3>Our Services</h3>
           <p class="services__description">
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -101,7 +104,7 @@
                 <span class="icon icon_24-7-support"></span>
               </div>
               <div class="service__description">
-                <h4>24 / 7 Support</h4>
+                <h4 class="support">24 / 7 Support</h4>
                 <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a
                   sem erat. Pellentesque egestas venenatis lorem .
                 </p>
@@ -120,6 +123,7 @@
             </div>
           </div>
         </div>
+        <div class="services-bottom"></div>
       </section>
     </div>
   </body>
