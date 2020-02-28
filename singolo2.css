@@ -1,0 +1,134 @@
+@import "fonts.css";
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 2rem;
+  color: #666d89;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1rem;
+  color: #666d89;
+  font-weight: 900;
+}
+
+.wrapper {
+  max-width: 1020px;
+  margin: auto;
+}
+
+.tags {
+  padding-top: 19px;
+}
+
+.images {
+  padding: 0 40px 0 0;
+}
+
+.images__wrapper {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.layout-3-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio__wrapper {
+  height: 870px;
+  background-color: #2d303a;
+}
+
+.portfolio__content {
+  padding: 69px 0px 0 40px;
+}
+
+.portfolio__description {
+  color: #666d89;
+  padding: 34px 0 0;
+}
+
+.portfolio__bottom {
+  height: 6px;
+  background-color: #323746;
+  position: relative;
+  top: 86px;
+}
+
+.tag {
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-weight: 400;
+  text-align: left;
+  padding: 3px 6px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.tag-selected {
+  color: #dedede;
+}
+
+.image {
+  padding-top: 19px;
+}
+
+.image__layout {
+  width: 220px;
+  height: 187px;
+  background-color: #464b5e;
+}
+
+.about-us__wrapper {
+  height: 660px;
+  background-color: #f2f2f2;
+  padding: 68px 40px 0;
+}
+
+.about-us__description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  text-align: left;
+  padding: 27px 0;
+}
+
+.employee {
+  width: 300px;
+  padding: 18px 0;
+}
+
+.employee__photo {
+  height: 300px;
+  background-color: #464b5e;
+}
+
+.employee__content {
+  padding-top: 19px;
+}
+
+.employee__about {
+  width: 300px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #767e9e;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+/*# sourceMappingURL=singolo2.css.map */
