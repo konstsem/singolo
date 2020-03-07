@@ -153,14 +153,34 @@ h2 {
   background-size: 9px;
 }
 
+.link_facebook:hover {
+  background-image: url("assets/images/facebook-hovered.svg");
+  border: 1px solid rgb(0, 0, 0);
+}
+
 .link_google {
   background-image: url("assets/images/google+.svg");
+}
+
+.link_google:hover {
+  background-image: url("assets/images/google-hovered.svg");
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .link_twitter {
   background-image: url("assets/images/twitter.svg");
 }
 
+.link_twitter:hover {
+  background-image: url("assets/images/twitter-hovered.svg");
+  border: 1px solid rgb(0, 0, 0);
+}
+
 .link_linkedin {
   background-image: url("assets/images/linkedin.svg");
+}
+
+.link_linkedin:hover {
+  background-image: url("assets/images/linkedin-hovered.svg");
+  border: 1px solid rgb(0, 0, 0);
 }
