@@ -49,11 +49,9 @@ h5 {
 }
 
 .header-bottom {
-  width: 100%;
   height: 6px;
   background-color: #323746;
-  position: absolute;
-  top: 89px;
+  position: relative;
   z-index: 12000;
 }
 
@@ -68,10 +66,21 @@ h5 {
   padding: 11px 0 0 452px;
 }
 
-.navigation li {
+.navigation__item {
   font-size: 12px;
   letter-spacing: -0.1px;
   color: #494e62;
+}
+
+.navigation__item::after {
+  position: relative;
+  content: ".";
+  left: 13px;
+  top: -2px;
+}
+
+.navigation__item:last-child::after {
+  display: none;
 }
 
 .navigation .selected a {
@@ -87,23 +96,18 @@ h5 {
   color: #f06c64;
 }
 
-.slider {
-  width: inherit;
-}
-
 .slider__main {
-  height: 600px;
+  height: 594px;
   background-color: #f06c64;
   position: relative;
   z-index: 11000;
 }
 
 .slider-bottom {
-  width: 100%;
   height: 15px;
   background-color: #ea676b;
-  position: absolute;
-  top: 680px;
+  position: relative;
+  top: -9px;
   z-index: 10000;
 }
 
@@ -120,7 +124,7 @@ h5 {
   width: 16px;
   height: 27px;
   position: relative;
-  top: 287px;
+  top: 281px;
   left: 42px;
 }
 
@@ -132,7 +136,7 @@ h5 {
   width: 16px;
   height: 27px;
   position: relative;
-  top: 260px;
+  top: 254px;
   left: 964px;
 }
 
@@ -152,13 +156,13 @@ h5 {
 .iphone-vertical {
   position: relative;
   left: 110px;
-  top: -65px;
+  top: -71px;
 }
 
 .iphone-horizontal {
   position: relative;
   left: 360px;
-  top: -561px;
+  top: -567px;
 }
 
 .services__title {
@@ -169,8 +173,7 @@ h5 {
 }
 
 .services {
-  width: 100%;
-  margin-top: 6px;
+  margin-top: -9px;
   height: 495px;
   background-color: #f2f2f2;
 }
@@ -251,7 +254,6 @@ h5 {
 }
 
 .services-bottom {
-  width: inherit;
   height: 6px;
   background-color: #fff;
   position: relative;
