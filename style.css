@@ -257,7 +257,7 @@ h5 {
   height: 6px;
   background-color: #fff;
   position: relative;
-  top: 27px;
+  top: 26px;
 }
 
 .support {
@@ -431,7 +431,7 @@ h5 {
   color: #767e9e;
   font-weight: 300;
   text-align: justify;
-  padding: 25px 0 26px;
+  padding: 25px 0 27px;
   letter-spacing: -0.2px;
 }
 
@@ -549,7 +549,7 @@ h5 {
 
 .get-a-quote__main {
   display: flex;
-  padding-top: 4px;
+  padding-top: 3px;
 }
 
 .get-a-quote__title {
