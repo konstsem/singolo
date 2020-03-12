@@ -1,8 +1,17 @@
+const resetSelected = (el, selected) => el.forEach((item) => item.classList.remove(selected));
+
 const navItems = document.querySelectorAll('.navigation__item');
-const resetSelected = () => navItems.forEach((item) => item.classList.remove('selected'));
 navItems.forEach((item) => {
   item.firstChild.addEventListener('click', () => {
-    resetSelected();
+    resetSelected(navItems, 'selected');
     item.classList.add('selected');
+  });
+});
+
+const tags = document.querySelectorAll('.tag');
+tags.forEach((tag) => {
+  tag.addEventListener('click', () => {
+    resetSelected(tags, 'tag_selected');
+    tag.classList.add('tag_selected');
   });
 });

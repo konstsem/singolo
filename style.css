@@ -270,7 +270,7 @@ h5 {
 }
 
 .images {
-  padding: 20px 40px 0 0;
+  padding: 19px 40px 0 0;
 }
 
 .images__wrapper {
@@ -317,16 +317,19 @@ h5 {
 }
 
 .tag {
+  font-family: "Lato", sans-serif;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 17px;
   color: #767e9e;
+  background-color: transparent;
   font-weight: 400;
   text-align: center;
-  padding: 0 6px 2px;
+  padding: 1px 7px 2px;
   border: 1px solid;
   border-radius: 5px;
   text-transform: capitalize;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.05px;
+  word-spacing: -1px;
   margin: 0 7px 0 1px;
 }
 
@@ -337,6 +340,10 @@ h5 {
 .tag:hover {
   cursor: pointer;
   color: #dedede;
+}
+
+.tag:focus {
+  outline: none;
 }
 
 .image {
