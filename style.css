@@ -275,9 +275,10 @@ h5 {
 
 .images__wrapper {
   height: 600px;
-  display: flex;
+  display: grid;
+  grid: "a a a a";
+  grid-gap: 20px;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .layout-3-column_about {
@@ -351,7 +352,6 @@ h5 {
   height: 187px;
   background-color: #464b5e;
   background-clip: content-box;
-  padding-bottom: 20px;
 }
 
 .image:nth-child(1n+13) {
