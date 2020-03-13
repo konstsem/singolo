@@ -354,6 +354,14 @@ h5 {
   background-clip: content-box;
 }
 
+.image.selected {
+  outline: orange auto 5px;
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
 .image:nth-child(1n+13) {
   display: none;
 }

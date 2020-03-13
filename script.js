@@ -15,3 +15,11 @@ tags.forEach((tag) => {
     tag.classList.add('tag_selected');
   });
 });
+
+const images = document.querySelectorAll('.image');
+images.forEach((image) => {
+  image.addEventListener('click', () => {
+    resetSelected(images, 'selected');
+    image.classList.add('selected');
+  })
+})
