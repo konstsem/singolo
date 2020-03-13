@@ -355,7 +355,7 @@ h5 {
 }
 
 .image.selected {
-  outline: orange auto 5px;
+  outline: #F06C64 auto 5px;
 }
 
 .image:hover {
