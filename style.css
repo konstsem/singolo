@@ -1,5 +1,5 @@
 @import "fonts.css";
-
+@import "fonts.css";
 body {
   font-family: "Lato", sans-serif;
 }
@@ -96,73 +96,24 @@ h5 {
   color: #f06c64;
 }
 
-.slider__main {
-  height: 594px;
-  background-color: #f06c64;
-  position: relative;
-  z-index: 11000;
-}
-
 .slider-bottom {
   height: 15px;
-  background-color: #ea676b;
+  background-color: #fff;
   position: relative;
   top: -9px;
   z-index: 10000;
 }
 
-.prev,
-.next {
-  width: 60px;
-}
-
-.prev button {
-  background-color: inherit;
-  border: none;
-  background-image: url(assets/images/prev.png);
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 27px;
-  position: relative;
-  top: 281px;
-  left: 42px;
-}
-
-.next button {
-  background-color: inherit;
-  border: none;
-  background-image: url(assets/images/next.png);
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 27px;
-  position: relative;
-  top: 254px;
-  left: 964px;
-}
-
-.prev button:hover {
-  background-image: url(assets/images/prev-hover.png);
-}
-
-.next button:hover {
-  background-image: url(assets/images/next-hover.png);
-}
-
-.prev button:focus,
-.next button:focus {
-  outline: none;
-}
-
 .iphone-vertical {
   position: relative;
+  top: -17px;
   left: 110px;
-  top: -71px;
 }
 
 .iphone-horizontal {
   position: relative;
-  left: 360px;
-  top: -567px;
+  top: 69px;
+  left: -222px;
 }
 
 .services__title {
@@ -600,7 +551,7 @@ h5 {
 }
 
 .submit {
- width: 619px;
+  width: 619px;
 }
 
 .textarea {
@@ -702,7 +653,7 @@ h5 {
 
 .link_facebook:hover {
   background-image: url("assets/images/facebook-hovered.svg");
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
 }
 
 .link_google {
@@ -711,7 +662,7 @@ h5 {
 
 .link_google:hover {
   background-image: url("assets/images/google-hovered.svg");
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
 }
 
 .link_twitter {
@@ -720,7 +671,7 @@ h5 {
 
 .link_twitter:hover {
   background-image: url("assets/images/twitter-hovered.svg");
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
 }
 
 .link_linkedin {
@@ -729,5 +680,133 @@ h5 {
 
 .link_linkedin:hover {
   background-image: url("assets/images/linkedin-hovered.svg");
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
 }
+
+.two-phones {
+  background-color: #f06c64;
+  padding-bottom: 14px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__main {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 11000;
+}
+
+.slider__slide {
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  animation: 0.5s ease-in-out;
+}
+
+.active,
+.next {
+  display: flex;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slider__slide-content {
+  display: flex;
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  z-index: 15000;
+}
+
+.control:hover {
+  cursor: pointer;
+}
+
+.control_left {
+  left: 0;
+  right: auto;
+}
+
+.control_right {
+  left: auto;
+  right: 0;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  background-image: url(assets/images/prev.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  left: 42px;
+}
+
+.arrow.right {
+  background-image: url(assets/images/next.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  left: 46px;
+}
+
+.arrow.left:hover {
+  background-image: url(assets/images/prev-hover.png);
+}
+
+.arrow.right:hover {
+  background-image: url(assets/images/next-hover.png);
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
