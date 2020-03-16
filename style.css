@@ -121,12 +121,38 @@ h5 {
   left: 88px;
 }
 
+.iphone-horizontal__button {
+  top: 191px;
+  left: 73px;
+}
+
 .iphone-button {
   position: absolute;
   z-index: 13000;
   width: 42px;
   height: 42px;
   border-radius: 21px;
+}
+
+.iphone-screen {
+  position: absolute;
+  z-index: 13500;
+  width: 193px;
+  height: 337px;
+  border-radius: 3px;
+  background-color: black;
+  display: none;
+}
+
+.iphone-vertical__screen {
+  top: 133px;
+  left: 13px;
+}
+
+.iphone-horizontal__screen {
+  transform: rotate(90deg);
+  top: 45px;
+  left: 195px;
 }
 
 .services__title {
@@ -698,7 +724,7 @@ h5 {
 
 .two-phones {
   background-color: #f06c64;
-  padding-bottom: 14px;
+  padding-bottom: 11px;
 }
 
 .slider {

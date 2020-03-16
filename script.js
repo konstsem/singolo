@@ -78,3 +78,10 @@ document.querySelector('.control_right').addEventListener('click', function() {
     nextItem(currentItem);
   }
 });
+
+const iphoneButtons = document.querySelectorAll('.iphone-button');
+iphoneButtons.forEach((button) => button.addEventListener('click', () => {
+  const orientation = button.dataset.orientation;
+  const currentScreen = document.querySelector(`.iphone-screen[data-orientation=${orientation}]`);
+  currentScreen.style.display = currentScreen.style.display === 'block' ? 'none' : 'block';
+}));
