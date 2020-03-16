@@ -116,6 +116,19 @@ h5 {
   left: -222px;
 }
 
+.iphone-vertical__button {
+  top: 478px;
+  left: 88px;
+}
+
+.iphone-button {
+  position: absolute;
+  z-index: 13000;
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+}
+
 .services__title {
   font-size: 30px;
   line-height: 18px;
