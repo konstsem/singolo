@@ -1,0 +1,36 @@
+@import "fonts.css";
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: -0.65px;
+  color: #fff;
+}
+
+h1 .logo-additional {
+  color: #f06c64;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.8rem;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+}
+
+h5 {
+  line-height: 1rem;
+  color: #666d89;
+  font-weight: 900;
+}
