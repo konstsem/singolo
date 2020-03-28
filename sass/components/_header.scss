@@ -11,8 +11,42 @@
   }
 }
 
+.hamburger {
+  display: none;
+  position: relative;
+  width: 25px;
+  height: 18px;
+  top: 6px;
+  left: 20px;
+  @include media-mobile {
+    display: inline-block;
+  }
+}
+
+.hamburger__line {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  left: 0;
+}
+
+.hamburger__line_top {
+  top: 0;
+}
+
+.hamburger__line_center {
+  top: 50%;
+}
+
+.hamburger__line_bottom {
+  top: 100%;
+}
+
 .logo {
-  padding: 3px 0 0 40px;
+  padding: 3px 0 0 14px;
 }
 
 .navigation {

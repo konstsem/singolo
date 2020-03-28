@@ -105,3 +105,7 @@ form.addEventListener('submit', (event) => {
   document.querySelector('.modal-window__field_details').innerText = details.value ? `Описание: ${details.value}` : 'Без описания';
   modalWindow.classList.add('modal-window_shown');
 });
+
+//hamburger
+const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', () => console.log('show menu'));
