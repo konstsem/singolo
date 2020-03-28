@@ -2,4 +2,3 @@ node_modules
 server.js
 *.json
 *.map
-*.scss

@@ -1,0 +1,280 @@
+.slider {
+  border-bottom: 6px solid #fff;
+  @include media-mobile {
+    // border-bottom: 2px sodid #fff;
+    border: none;
+  }
+}
+
+.slider__main {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 11000;
+  @include media-tablet {
+    height: 447px;
+  }
+  @include media-mobile {
+    height: 220px;
+  }
+}
+
+.slider__slide {
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  animation: 0.5s ease-in-out;
+}
+
+.active,
+.next {
+  display: flex;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slider__slide-content {
+  display: flex;
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  z-index: 15000;
+}
+
+.control:hover {
+  cursor: pointer;
+}
+
+.control_left {
+  left: 0;
+  right: auto;
+}
+
+.control_right {
+  left: auto;
+  right: 0;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  @include media-tablet {
+    transform: translateY(-40%);
+  }
+  @include media-mobile {
+    background-size: 48%;
+  }
+}
+
+.arrow.left {
+  background-image: url(assets/images/prev.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  left: 41px;
+  @include media-tablet {
+    left: 30px;
+  }
+  @include media-mobile {
+    left: 10px;
+  }
+}
+
+.arrow.right {
+  background-image: url(assets/images/next.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  left: 46px;
+  @include media-tablet {
+    left: 34px;
+  }
+  @include media-mobile {
+    left: 13px;
+  }
+}
+
+.arrow.left:hover {
+  background-image: url(assets/images/prev-hover.png);
+}
+
+.arrow.right:hover {
+  background-image: url(assets/images/next-hover.png);
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.iphone-vertical {
+  position: relative;
+  top: 54px;
+  left: 112px;
+  @include media-tablet {
+    top: -19px;
+    left: 54px;
+  }
+  @include media-mobile {
+    top: -133px;
+    left: -35px;
+  }
+}
+
+.iphone-horizontal {
+  position: relative;
+  top: 177px;
+  left: 185px;
+  @include media-tablet {
+    top: 103px;
+    left: 20px;
+  }
+  @include media-mobile {
+    top: -11px;
+    left: -237px;
+  }
+}
+
+.iphone_body {
+  @include media-tablet {
+    transform: scale(0.75);
+  }
+  @include media-mobile {
+    transform: scale(0.366);
+  }
+}
+
+.iphone-vertical__button {
+  top: 407px;
+  left: 88px;
+  @include media-tablet {
+    top: 361px;
+    left: 90px;
+  }
+  @include media-mobile {
+    top: 289px;
+    left: 95px;
+  }
+}
+
+.iphone-horizontal__button {
+  top: 87px;
+  left: 8px;
+  @include media-tablet {
+    top: 90px;
+    left: 61px;
+  }
+  @include media-mobile {
+    top: 95px;
+    left: 143px;
+  }
+}
+
+.iphone-button {
+  position: absolute;
+  z-index: 13000;
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  @include media-tablet {
+    transform: scale(0.75);
+  }
+  @include media-mobile {
+    transform: scale(0.366);
+  }
+}
+
+.iphone-screen {
+  position: absolute;
+  z-index: 13500;
+  width: 193px;
+  height: 337px;
+  border-radius: 3px;
+  background-color: black;
+  display: none;
+}
+
+.iphone-vertical__screen {
+  top: 63px;
+  left: 12px;
+  @include media-tablet {
+    transform: scale(0.75);
+    top: 65px;
+    left: 14px;
+  }
+  @include media-mobile {
+    transform: scale(0.366);
+    top: 69px;
+    left: 19px;
+  }
+}
+
+.iphone-horizontal__screen {
+  transform: rotate(90deg);
+  top: -60px;
+  left: 130px;
+  @include media-tablet {
+    transform: rotate(90deg) scale(0.75);
+    top: -57px;
+    left: 134px;
+  }
+  @include media-mobile {
+    transform: rotate(90deg) scale(0.366);
+    top: -53px;
+    left: 140px;
+  }
+}
+
+.three-phones_body {
+  @include media-tablet {
+    transform: scale(0.76);
+    position: relative;
+    top: -74px;
+    left: -128px;
+  }
+  @include media-mobile {
+    transform: scale(0.369);
+    top: -188px;
+    left: -322px;
+  }
+}

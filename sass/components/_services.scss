@@ -1,0 +1,108 @@
+.services__title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+}
+
+.services {
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #fff;
+  @include media-tablet {
+    border-bottom: none;
+  }
+}
+
+.services__wrapper {
+  padding: 71px 20px 26px 40px;
+  @include media-tablet {
+    padding: 50px 20px 22px 40px;
+  }
+  @include media-mobile {
+    padding: 38px 5px 0 32px;
+  }
+}
+
+.services__description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  padding: 26px 27px 0 0;
+}
+
+.layout-3-column_service {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 45px;
+  @include media-tablet {
+    padding-top: 35px;
+  }
+  @include media-mobile {
+    padding-top: 28px;
+  }
+}
+
+.service {
+  display: flex;
+  width: 307px;
+  padding: 0 13px 30px 0;
+  @include media-tablet {
+    padding: 0 46px 51px 0;
+  }
+  @include media-mobile {
+    padding: 0 31px 26px 0;
+  }
+}
+
+.service__description {
+  padding: 2px 6px 0 11px;
+  @include media-tablet {
+    padding-top: 1px;
+  }
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+
+.icon_custom-design {
+  background-image: url(assets/images/pen.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_inovative-ideas {
+  background-image: url(assets/images/bulb.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_love-is-the-answer {
+  background-image: url(assets/images/heart.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_responsive-layout {
+  background-image: url(assets/images/phone.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_24-7-support {
+  background-image: url(assets/images/bubble.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_feel-like-a-star {
+  background-image: url(assets/images/star.svg);
+  background-repeat: no-repeat;
+}
+
+.service__description p {
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  padding-top: 8px;
+  text-align: justify;
+}

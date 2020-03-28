@@ -27,7 +27,6 @@
             </ul>
           </nav>
         </div>
-        <div class="header-bottom"></div>
       </header>
       <section class="slider">
         <div class="slider__main">
@@ -40,12 +39,12 @@
           <div class="slider__slide two-phones active">
             <div class="slider__slide-content">
               <div class="iphone-vertical">
-                <img src="assets/images/iphone-vertical.png" alt="iphone-vertical">
+                <img class="iphone_body" src="assets/images/iphone-vertical.png" alt="iphone-vertical">
                 <div class="iphone-button iphone-vertical__button" data-orientation="vertical"></div>
                 <div class="iphone-screen iphone-vertical__screen " data-orientation="vertical"></div>
               </div>
               <div class="iphone-horizontal">
-              <img src="assets/images/iphone-horizontal.png" alt="iphone-horizontal">
+              <img class="iphone_body" src="assets/images/iphone-horizontal.png" alt="iphone-horizontal">
               <div class="iphone-button iphone-horizontal__button" data-orientation="horizontal"></div>
                 <div class="iphone-screen iphone-horizontal__screen " data-orientation="horizontal"></div>
               </div>
@@ -53,14 +52,13 @@
           </div>
           <div class="slider__slide three-phones">
             <div class="slider__slide-content">
-              <img src="assets/images/Slide-2.png" alt="Slide-2">
+              <img class="three-phones_body" src="assets/images/Slide-2.png" alt="Slide-2">
             </div>
           </div>
         </div>
-        <div class="slider-bottom"></div>
       </section>
       <section class="services" id="services">
-        <div class="services__wrapper">
+        <div class="wrapper services__wrapper">
           <h3 class="services__title">Our Services</h3>
           <p class="services__description">
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -134,7 +132,6 @@
             </div>
           </div>
         </div>
-        <div class="services-bottom"></div>
       </section>
       <section class="portfolio" id="portfolio">
         <div class="portfolio__wrapper">
@@ -178,7 +175,6 @@
               </div>
             </div>
           </div>
-        <div class="portfolio__bottom"></div>
         </div>
       </section>
       <section class="about-us" id="about">
@@ -234,7 +230,6 @@
             </div>
           </div>
         </div>
-        <div class="about-us__bottom"></div>
       </section>
       <section class="section get-a-quote">
         <div class="get-a-quote__wrapper">
@@ -247,11 +242,11 @@
           <div class="get-a-quote__main" id="contact">
             <form action="" method="GET">
               <fieldset class="inputs">
-                <input class="input" type="text" name="name" placeholder="Name (Required)" required><br>
-                <input class="input" type="email" name="email" placeholder="Email (Required)" required><br>
+                <input class="input" type="text" name="name" placeholder="Name (required)" required><br>
+                <input class="input" type="email" name="email" placeholder="Email (required)" required><br>
                 <input class="input" type="text" name="subject" placeholder="Subject"><br>
                 <textarea class="input textarea" type="text" name="details" placeholder="Describe your project in detail..."></textarea>
-                <input class="input submit" type="submit" value="Submit">
+                <input class="input submit" type="submit" value="SEND">
               </fieldset>
             </form>
             <div class="contact-info">
@@ -267,15 +262,16 @@
             </div>
           </div>
         </div>
-        <div class="get-a-quote__bottom"></div>
       </section>
       <footer class="footer">
         <div class="copyright">&copy; Copyright 2013</div>
-        <div class="social-links">
-          <a class="link link_facebook" href="#"></a>
-          <a class="link link_google" href="#"></a>
-          <a class="link link_twitter" href="#"></a>
-          <a class="link link_linkedin" href="#"></a>
+        <div class="footer__wrapper_links">
+          <div class="social-links">
+            <a class="link link_facebook" href="#"></a>
+            <a class="link link_google" href="#"></a>
+            <a class="link link_twitter" href="#"></a>
+            <a class="link link_linkedin" href="#"></a>
+          </div>
         </div>
       </footer>
       <div class="modal-window">

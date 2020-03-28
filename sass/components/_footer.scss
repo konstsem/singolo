@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  align-items: center;
+  height: 76px;
+  background-color: #2d303a;
+  color: #666d89;
+  font-size: 1.2rem;
+}
+
+.copyright {
+  font-size: 13px;
+  line-height: 12px;
+  font-weight: 700;
+  padding-top: 6px;
+  padding-left: 41px;
+  @include media-tablet {
+    padding-left: 39px;
+  }
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.footer__wrapper_links {
+  padding-left: 681px;
+  @include media-tablet {
+    padding-left: 431px;
+  }
+  @include media-mobile {
+    padding: 34px 0 0 112px;
+  }
+}
