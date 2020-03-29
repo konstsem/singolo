@@ -108,4 +108,25 @@ form.addEventListener('submit', (event) => {
 
 //hamburger
 const hamburger = document.querySelector('.hamburger');
-hamburger.addEventListener('click', () => console.log('show menu'));
+const modalNav = document.querySelector('.modal-nav');
+const modalHamburger = modalNav.querySelector('.hamburger');
+hamburger.addEventListener('click', () => {
+  console.log('click');
+  modalHamburger.classList.add('rotated');
+  const isShown = [...modalNav.classList].includes('modal-nav_shown');
+  if (isShown) {
+    modalNav.classList.remove('modal-nav_shown');
+  } else {
+    modalNav.classList.add('modal-nav_shown');
+  }
+});
+
+// Modal Navigation
+const modalNavItems = document.querySelectorAll('.modal-nav__item');
+modalNavItems .forEach((item) => {
+  item.firstChild.addEventListener('click', () => {
+    resetSelected(modalNavItems, 'selected');
+    item.classList.add('selected');
+    modalNav.classList.remove('modal-nav_shown');
+  });
+});
